@@ -1,13 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h> // Necessário para rand(gerar números aleatórios) e srand(inteiros)
-#include <time.h> // Necessário para time()
+#include <stdlib.h> 
+#include <time.h> 
 
-// Meu Github: https://github.com/yLeonardo99
+/*PROBLEMAS DE LÓGICA DE PROGRAMAÇÃO (PARTE-1) */
 
-/************************* LISTA DE AQUECIMENTO  - PARTE 1 (LINGUAGEM C) ****************************
-********* PROF: Daniel- Github: https://github.com/DanielGTI (LISTAQUECIMENTO)**********************/
-
-//	2 - Crie um programa que some dois números.
 void exe2(){
   
   //	2 - Crie um programa que some dois números.
@@ -26,7 +22,6 @@ void exe2(){
   printf("A soma dos dois números = %d\n", soma);
 }
 
-//	3 - Crie um programa que some dois números inteiros e um número real.
 void exe3(){
   
   //	3 - Crie um programa que some dois números inteiros e um número real.
@@ -51,7 +46,6 @@ void exe3(){
   printf("A soma dos tres números = %.2f\n", soma);
 }
 
-//	4. Crie um programa que solicite duas notas e calcule a média do aluno.
 void exe4(){
 
   //	4. Crie um programa que solicite duas notas e calcule a média do aluno.
@@ -71,7 +65,6 @@ void exe4(){
   printf("A média das duas notas = %.2f\n", media);
 }
 
-/* 5 - Crie um programa que solicite duas notas do aluno, calcule a média e informe se o aluno está "aprovado" ou "reprovado" (média 6.0) */
 void exe5() {
   
   /* 5 - Crie um programa que solicite duas notas do aluno, calcule a média e informe se o aluno está "aprovado" ou "reprovado" (média 6.0) */
@@ -97,8 +90,6 @@ void exe5() {
     }
 }
 
-/* 6 - Crie um programa que solicite 3 notas do aluno (Av1, Av2, Av3), 
-  descarte a menor nota e exiba a média do aluno, informando se o mesmo foi aprovado ou não. */
 void exe6() {
    /* 6 - Crie um programa que solicite 3 notas do aluno (Av1, Av2, Av3), 
   descarte a menor nota e exiba a média do aluno, informando se o mesmo foi aprovado ou não. */
@@ -144,7 +135,6 @@ void exe6() {
     }
 }
 
-// 7 - Crie um programa que solicita um número e informa se ele é positivo ou negativo.
 void exe7() {
   
   // 7 - Crie um programa que solicita um número e informa se ele é positivo ou negativo.
@@ -167,7 +157,6 @@ void exe7() {
     }
 }
 
-// 8 - Crie um programa que solicita o ano de nascimento do usuário e informe a sua idade.
 void exe8() {
   
   // 8 - Crie um programa que solicita o ano de nascimento do usuário e informe a sua idade.
@@ -186,7 +175,6 @@ void exe8() {
     printf("Você tem %d anos.\n", idade);
 }
 
-// 9 - Crie um programa que solicita a sua idade e informe o seu ano de nascimento.
 void exe9() {
   
   // 9 - Crie um programa que solicita a sua idade e informe o seu ano de nascimento.
@@ -205,8 +193,6 @@ void exe9() {
     printf("Você nasceu no ano de %d.\n", anoNascimento);
 }
 
-/* 10 - Crie um programa que solicita um valor ao usuário (idade ou ano de nascimento) e
-informe a sua idade ou a sua data de nascimento. */
 void exe10() {
 
   /* 10 - Crie um programa que solicita um valor ao usuário (idade ou ano de nascimento) e
@@ -243,7 +229,6 @@ void exe10() {
     }
 }
 
-// 11 - Criar um programa que solicite um numero do usuário e diga se ele é par ou ímpar.
 void exe11() {
   
   // 11 - Criar um programa que solicite um numero do usuário e diga se ele é par ou ímpar.
@@ -263,8 +248,6 @@ void exe11() {
     }
 }
 
-/* 12 - Criar um programa que solicite o usuário escolher entre par ou ímpar, escolher um
-número, sortear um valor ao computador e verificar quem ganhou no par ou ímpar. */
 void exe12() {
 
   /* 12 - Criar um programa que solicite o usuário escolher entre par ou ímpar, escolher um
@@ -298,9 +281,6 @@ void exe12() {
     }
 }
 
-/* 13 - Criar um programa que solicite o usuário escolher entre par ou ímpar, escolher um
-número, sortear um valor ao computador e verificar quem ganhou no par ou ímpar. Agora o
-computador deve sempre GANHAR! */
 void exe13() {
   
   /* 13 - Criar um programa que solicite o usuário escolher entre par ou ímpar, escolher um
@@ -340,7 +320,6 @@ computador deve sempre GANHAR! */
     }
 }
 
-// 14 - Crie um programa que solicita um valor em metros e converta para centímetros.
 void exe14() {
   
   // 14 - Crie um programa que solicita um valor em metros e converta para centímetros.
@@ -357,7 +336,6 @@ void exe14() {
     printf("O valor em centímetros é: %.2f\n", centimetros);
 }
 
-// 15 - Crie um programa que solicita ao usuário o raio de um círculo e calcule a sua área.
 void exe15() {
 
   // 15 - Crie um programa que solicita ao usuário o raio de um círculo e calcule a sua área.
@@ -376,8 +354,6 @@ void exe15() {
     printf("A área do círculo é: %.2f\n", area);
 }
 
-/* 16 - Crie um programa que solicita ao usuário o valor da hora trabalhada, quantas horas
-trabalho no mês e calcule o valor a receber no final do mês. */
 void exe16() {
 
   /* 16 - Crie um programa que solicita ao usuário o valor da hora trabalhada, quantas horas
@@ -398,8 +374,6 @@ void exe16() {
     printf("O valor a receber no final do mês é: R$ %.2f\n", valorTotal);
 }
 
-/* 17 - Crie um programa que solicita uma temperatura em graus Fahrenheit e converta e
-informe a temperatura em graus Celsius. */
 void exe17() {
 
   /* 17 - Crie um programa que solicita uma temperatura em graus Fahrenheit e converta e
@@ -417,7 +391,6 @@ void exe17() {
     printf("A temperatura em graus Celsius é: %.2f\n", celsius);
 }
 
- /* 18 - Crie um programa que solicita o peso e a altura de um usuário e informe o seu IMC (Índice de massa corpórea) */ 
 void exe18() {
 
   /* 18 - Crie um programa que solicita o peso e a altura de um usuário e informe o seu IMC (Índice de massa corpórea) */ 
@@ -437,8 +410,6 @@ void exe18() {
     printf("O Índice de Massa Corporal (IMC) é: %.2f\n", imc);
 }
 
-/* 19 - Crie um programa para calcular o consumo médio de um automóvel, solicite ao usuário
-uma distância percorrida em KM e o total de combustível consumido, em litros.*/
 void exe19() {
 
   /* 19 - Crie um programa para calcular o consumo médio de um automóvel, solicite ao usuário
@@ -471,14 +442,8 @@ void exe19() {
     }
 }
 
-/* 20 - Crie um programa que solicita a um vendedor o seu salário fixo e o valor total de suas
-vendas no mês. Sabendo que a sua comissão é de 15%, calcule o salário a receber no final do
-mês. */
 void exe20() {
 
-  /* 20 - Crie um programa que solicita a um vendedor o seu salário fixo e o valor total de suas
-  vendas no mês. Sabendo que a sua comissão é de 15%, calcule o salário a receber no final do
-  mês. */
   
     float salarioFixo, totalVendas, salarioFinal;
 
@@ -495,51 +460,150 @@ void exe20() {
     printf("O salário a receber no final do mês é: R$ %.2f\n", salarioFinal);
 }
 
-
-
-/* ***************************** FÓRMULA DO PROFESSOR ****************************************** 
-pego no Github; https://github.com/DanielGTI/ListaAquecimento/blob/main/main.c
-
-O código mostra um menu para que o usuário escolhe e executr um dos programas entre  2 a 20. Se o número não estiver na lista, informa que o programa é inválido e solicita uma nova entrada. */
-
-int main(void) {
-  
-  int prog;
-  char parar;
-  
-  while(1){
-    system("clear");
-    printf("Qual programa deseja executar: ");
-    scanf("%d", & prog);
-    printf("\n----------------\n\n");
+/*PROBLEMAS DE LÓGICA DE PROGRAMAÇÃO (PARTE-2) */
+ 
+void exe21() {
     
-    switch(prog){
-      case 2:	exe2();	break;
-      case 3: exe3();	break;
-      case 4: exe4(); break;
-      case 5: exe5(); break;
-      case 6: exe6(); break;
-      case 7: exe7(); break;
-      case 8: exe8(); break;
-      case 9: exe9(); break;
-      case 10: exe10(); break;
-      case 11: exe11(); break;
-      case 12: exe12(); break;
-      case 13: exe13(); break;
-      case 14: exe14(); break;
-      case 15: exe15(); break;
-      case 16: exe16(); break;
-      case 17: exe17(); break;
-      case 18: exe18(); break;
-      case 19: exe19(); break;
-      case 20: exe20(); break;
-      
-      default: printf("Programa Inválido.. Tente novamente.\n");
+    // Extremamente Básico
+
+    int a,b,x;
+
+    printf("Digite dois números inteiros:");
+    scanf("%d %d", &a,&b);
+
+x = a+b;
+
+    printf("X = %d\n",x);
+
+    
+ }
+
+
+void exe22(){
+
+    // ÁREA DO CIRCULO
+
+    /*Fórmula para cálcular a área de uma circuferência é area = π.raio² (π = 3.14159) */
+
+    float raio, area;
+    printf("Digite o raio do círculo: ");
+    scanf("%f", &raio);
+    
+    area = 3.14159 * raio * raio;
+    printf("A área do círculo é: %.4f\n", area);
+    
+    
+}
+
+void exe23(){
+
+    // SOMA SIMPLES
+
+    int a,b,soma;
+
+        printf("Digite dois números inteiros:");
+        scanf("%d %d", &a,&b);
+
+    soma = a+b;
+
+        printf("soma = %d\n",soma);
+
+    
+}
+
+void exe24(){
+
+    // PRODUTO SIMPLES
+    
+    int a,b,produto;
+        printf("Digite dois números inteiros:");
+        scanf("%d %d", &a,&b);
+    
+    produto = a*b;
+        printf("produto = %d\n",produto);
+    
+    
+}
+
+void exe25(){
+
+    // MÉDIA 1
+
+    float a,b,media;
+        printf("Digite dois números inteiros:");
+        scanf("%f %f", &a,&b);
+    
+    media = (a*3.5+b*7.5)/11;    
+        printf("media = %.5f\n",media);
+    
+}
+
+void exe26(){
+
+    // MÉDIA 2
+    
+    float a,b,c,media;
+        printf("Digite três números inteiros:");
+        scanf("%f %f %f", &a,&b,&c);
+    
+      media = (a*2+b*3+c*5)/10;    
+        printf("media = %.1f\n",media);
+    
+}
+
+
+/* *****************************************/
+int main(void) {
+    int prog;
+
+    while (1) {
+    
+        #ifdef _WIN32
+            system("cls");
+        #else
+            system("clear");
+        #endif
+
+        printf("Qual programa deseja executar ? ");
+        scanf("%d", &prog);
+        printf("\n----------------\n\n");
+
+        switch (prog) {
+            case 2: exe2(); break;
+            case 3: exe3(); break;
+            case 4: exe4(); break;
+            case 5: exe5(); break;
+            case 6: exe6(); break;
+            case 7: exe7(); break;
+            case 8: exe8(); break;
+            case 9: exe9(); break;
+            case 10: exe10(); break;
+            case 11: exe11(); break;
+            case 12: exe12(); break;
+            case 13: exe13(); break;
+            case 14: exe14(); break;
+            case 15: exe15(); break;
+            case 16: exe16(); break;
+            case 17: exe17(); break;
+            case 18: exe18(); break;
+            case 19: exe19(); break;
+            case 20: exe20(); break;
+            case 21: exe21(); break;
+            case 22: exe22(); break;
+            case 23: exe23(); break;
+            case 24: exe24(); break;
+            case 25: exe25(); break;
+            case 26: exe26(); break;
+            // case 28: exe28(); break;
+            
+            default:
+                printf("Programa Inválido.. Tente novamente.\n");
+        }
+
+        printf("\nTecle Enter para continuar...\n");
+        getchar(); 
+        getchar(); 
     }
 
-    printf("\nTecle para continuar...\n");
-    
-    getchar();getchar();
-  }
-  return 0;
+    return 0;
 }
