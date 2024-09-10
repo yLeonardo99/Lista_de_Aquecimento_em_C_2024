@@ -974,23 +974,30 @@ void exe44(){
 
 void exe45() {
 
-    /*LANCHE
+    /* LANCHE
 
       TABELA CADASTRADO:
     
-CÓD       ITEM              PREÇO
-1     Cachorro Quente      R$ 4,00
-2     X-Salada             R$ 4,50
-3     X-Bacon              R$ 5,00
-4     Torrada Simples      R$ 2,00
-5     Refrigerante         R$ 1,50    */
+    CÓD       ITEM              PREÇO
+    1     Cachorro Quente      R$ 4,00
+    2     X-Salada             R$ 4,50
+    3     X-Bacon              R$ 5,00
+    4     Torrada Simples      R$ 2,00
+    5     Refrigerante         R$ 1,50    
+    */
     
     int codigo, quantidade;
     double total;
 
-    printf("Digite o código do item e a quantidade: ");
-    scanf("%d %d", &codigo, &quantidade);
+    printf("Digite o código do item: ");
+    scanf("%d", &codigo);
 
+    printf("Digite a quantidade: ");
+    scanf("%d", &quantidade);
+  
+    printf("Código do item: %d\n", codigo);
+    printf("Quantidade: %d\n", quantidade);
+  
     if (codigo == 1) {
         total = 4.00 * quantidade;
     } 
@@ -1010,6 +1017,7 @@ CÓD       ITEM              PREÇO
         printf("Código inválido.\n");
         return;
     }
+  
     printf("Total: R$ %.2lf\n", total);
 }
 
