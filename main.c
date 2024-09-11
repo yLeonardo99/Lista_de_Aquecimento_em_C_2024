@@ -1671,7 +1671,129 @@ void exe66(){
     }
 }
 
+void exe67() {
 
+    // SEIS NÚMEROS ÍMPARES
+    
+    int x;
+
+    printf("Digite um valor inteiro (1 <= x <= 1000): ");
+    scanf("%d", &x);
+
+    if (x < 1 || x > 1000) {
+        printf("O valor deve estar entre 1 e 1000.\n");
+        return;
+    }
+
+    for (int i = 1; i <= x; i += 2) {
+        printf("%d\n", i);
+    }
+}
+
+void exe67(){
+
+    // SOMA DE IMPARES CONSECUTIVOS 1
+
+     int x, y, soma = 0;
+
+    printf("Digite dois valores inteiros:\n");
+    scanf("%d", &x);
+    scanf("%d", &y);
+
+    int inicio = x < y ? x : y;
+    int fim = x > y ? x : y;
+
+    for (int i = inicio; i <= fim; i++) {
+        if (i % 2 != 0) {
+            soma += i;
+        }
+    }
+    printf("%d\n", soma);
+}
+
+void exe68(){
+
+    // INTERVALO 2
+
+    int N; 
+    int valor; 
+    int dentro = 0;  
+    int fora = 0;  
+
+    printf("Digite o número de casos de teste:\n");
+    scanf("%d", &N);
+    
+    for (int i = 0; i < N; i++) {
+        printf("Digite um valor:\n");
+        scanf("%d", &valor);
+
+        if (valor >= 10 && valor <= 20) {
+            dentro++;
+        } else {
+            fora++;
+        }
+
+    
+}
+
+void exe69(){
+
+    // QUADRADO DE PARES
+
+    int N;
+    
+    printf("Digite um valor de N (5 < N < 2000): ");
+    scanf("%d", &N);
+
+    if (N <= 5 || N >= 2000) {
+        printf("Valor de N fora do intervalo especificado.\n");
+        return;
+    }
+
+    for (int i = 2; i <= N; i += 2) {
+        printf("%d^2 = %d\n", i, i * i);
+    }
+}
+
+void exe70(){
+
+    // PAR OU IMPARES
+
+    int N, x;
+
+    printf("Digite o número de casos de teste: ");
+    scanf("%d", &N);
+
+
+    if (N <= 0 || N >= 10000) {
+        printf("Número de casos de teste fora do intervalo permitido.\n");
+        return;
+    }
+
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &x);
+
+        if (x == 0) {
+            printf("NULL\n");
+        } else {
+            
+            // Verifica se o valor é PAR ou ÍMPAR
+            if (x % 2 == 0) {
+                printf("EVEN ");
+            }
+            else {
+                printf("ODD ");
+            }
+
+            // Verifica se o valor é POSITIVO ou NEGATIVO
+            if (x > 0) {
+                printf("POSITIVE\n");
+            } else {
+                printf("NEGATIVE\n");
+            }
+        }
+    }
+}
 
 /*Loop para exercicios*/
 
@@ -1755,11 +1877,11 @@ int main(void) {
             case 63: exe63(); break;
             case 64: exe64(); break;
             case 65: exe65(); break;
-            // case 66: exe66(); break;
-            // case 67: exe67(); break;
-            // case 68: exe68(); break;
-            // case 69: exe69(); break;
-            // case 70: exe70(); break;
+            case 66: exe66(); break;
+            case 67: exe67(); break;
+            case 68: exe68(); break;
+            case 69: exe69(); break;
+            case 70: exe70(); break;
 
             default:
                 printf("Programa Inválido.. Tente novamente.\n");
